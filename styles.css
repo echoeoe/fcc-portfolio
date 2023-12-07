@@ -1,0 +1,371 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Handlee', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+
+body {
+    margin: 0;
+}
+
+#navbar {
+    background-color: hotpink;
+    display: flex;
+    top: 0;
+    position: fixed;
+    padding: 1.5rem;
+    width: 100vw;
+    height: 5vh;
+    z-index: 1;
+}
+
+#navbar a {
+    text-decoration: none;
+    padding: 1rem;
+    color: black;
+
+}
+
+#navbar a:hover {
+    font-weight: bolder;
+}
+
+#link-div {
+    position: absolute;
+    padding: .5rem;
+    right: 8rem;
+    font-size: 2rem;
+}
+
+#welcome-section {
+    background-color: #202020;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+#welcome-section h1 {
+    font-size: 3rem;
+}
+
+#welcome-section p {
+    font-size: 1.5rem;
+}
+
+section {
+    padding: 1rem;
+    width: 100%;
+    padding-top: 12vh;
+    height: 83vh;
+}
+
+img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    object-position: 0% 0%;
+    border-bottom: 1px solid black;
+
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.project-tile p {
+    text-align: center;
+}
+
+#show-all {
+    /* button */
+    border: 1px solid black;
+    height: 2rem;
+    width: 5rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    grid-area: button;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#show-all:hover {
+    background-color: lightblue;
+}
+
+a {
+    text-decoration: none;
+}
+
+.project-tile {
+    border: 2px solid transparent;
+    background-color: cornsilk;
+    width: 27vw;
+    height: 50vh;
+    margin: 1rem;
+    grid-area: main;
+}
+
+.project-tile:hover {
+    border: 2px inset blueviolet;
+    color: deeppink;
+    font-weight: bold;
+}
+
+#projects {
+    background-color: lightskyblue;
+    height: 140vh;
+    border: 1px solid transparent;
+    display: grid;
+    grid-template-areas:
+        'header header header'
+        'main main main'
+        'main main main'
+        'button button button';
+}
+
+#linkedin {
+    color: white;
+    position: relative;
+    font-size: 2rem;
+}
+
+#linkedin:hover {
+    top: 10px;
+    color: chartreuse;
+}
+
+#projects h2 {
+    grid-area: header;
+    margin-left: 2rem;
+}
+
+#contact {
+    background-color: #202020;
+    color: white;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ball {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 15%;
+    top: 25rem;
+    animation: bounce 15s linear infinite;
+    background-image: linear-gradient(deeppink, skyblue);
+}
+
+@keyframes bounce {
+    0% {
+        /* left, bottom */
+        left: 15%;
+        top: 25rem;
+    }
+
+    5% {
+        left: 25%;
+        top: 19rem;
+        /* bottom */
+    }
+
+    10% {
+        left: 35%;
+        top: 25rem;
+    }
+
+    15% {
+        left: 45%;
+        top: 19rem;
+    }
+
+    20% {
+        left: 55%;
+        top: 25rem;
+    }
+
+    25% {
+        left: 65%;
+        top: 19rem;
+    }
+
+    30% {
+        left: 75%;
+        top: 25rem;
+    }
+
+    35% {
+        left: 75%;
+        top: 19rem;
+    }
+
+    40% {
+        /* dropping mail */
+        left: 75%;
+        top: 25rem;
+    }
+
+    /* bounce on way back */
+    43% {
+        top: 24rem;
+    }
+
+    46% {
+        top: 25rem;
+    }
+
+    49% {
+        top: 24rem;
+    }
+
+    52% {
+        top: 25rem;
+    }
+
+    55% {
+        top: 24rem;
+    }
+
+    58% {
+        top: 25rem;
+    }
+
+    61% {
+        top: 24rem;
+    }
+
+    64% {
+        top: 25rem;
+    }
+
+    67% {
+        top: 24rem;
+    }
+
+    70% {
+        top: 25rem;
+    }
+
+    73% {
+        top: 24rem;
+    }
+
+    76% {
+        top: 25rem;
+    }
+
+    79% {
+        top: 24rem;
+    }
+
+    82% {
+        top: 25rem;
+    }
+
+    85% {
+        top: 24rem;
+    }
+
+    88% {
+        top: 25rem;
+    }
+
+    91% {
+        top: 24rem;
+    }
+
+    94% {
+        top: 25rem;
+    }
+
+    97% {
+        top: 24rem;
+    }
+}
+
+.post {
+    height: 6.5rem;
+    width: 1rem;
+    position: absolute;
+    right: 15%;
+    top: 25rem;
+    background-color: linen;
+}
+
+.block {
+    width: 3rem;
+    height: 1rem;
+    background-color: chartreuse;
+    position: absolute;
+    border-bottom: 1px solid black;
+    right: 16%;
+}
+
+.held {
+    left: 2rem;
+    top: 2rem;
+    border-bottom: none;
+    animation: disappear 15s linear infinite;
+}
+
+.one {
+    top: 27rem;
+}
+
+.two {
+    top: 26rem;
+    animation: appear 15s linear infinite;
+    opacity: 0;
+}
+
+.three {
+    top: 25rem;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    38.99% {
+        opacity: 0;
+    }
+
+    39% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+
+    38.99% {
+        opacity: 1;
+    }
+
+    39% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
