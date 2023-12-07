@@ -81,7 +81,7 @@ h2 {
     text-align: center;
 }
 
-#show-all {
+#profile-link {
     /* button */
     border: 1px solid black;
     height: 2rem;
@@ -97,7 +97,7 @@ h2 {
     border-radius: 5px;
 }
 
-#show-all:hover {
+#profile-link:hover {
     background-color: lightblue;
 }
 
