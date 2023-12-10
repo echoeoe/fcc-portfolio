@@ -203,17 +203,20 @@ a {
 
     30% {
         left: 75%;
+        right: 15%;
         top: 25rem;
     }
 
     35% {
         left: 75%;
+        right: 15%;
         top: 19rem;
     }
 
     40% {
         /* dropping mail */
         left: 75%;
+        right: 15%;
         top: 25rem;
     }
 
@@ -367,5 +370,41 @@ a {
 
     100% {
         opacity: 0;
+    }
+}
+
+@media screen and (width < 1000px){
+    #navbar{
+        /* indicator - remove later */
+        background-color: pink;
+        /* make Contact fit on the navbar */
+
+    }
+
+    #navbar a{
+        padding: .5rem;
+    }
+
+    #link-div {
+        position: absolute;
+        padding: .5rem;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #projects{
+        /* vertical, one at a time, center */
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+    }
+
+    /* make tile bigger */
+    .project-tile{
+        width: 80%;
+        aspect-ratio: 1/1;
     }
 }
