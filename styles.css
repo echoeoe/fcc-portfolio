@@ -203,20 +203,17 @@ a {
 
     30% {
         left: 75%;
-        right: 15%;
         top: 25rem;
     }
 
     35% {
         left: 75%;
-        right: 15%;
         top: 19rem;
     }
 
     40% {
         /* dropping mail */
         left: 75%;
-        right: 15%;
         top: 25rem;
     }
 
@@ -387,8 +384,7 @@ a {
 
     #link-div {
         position: absolute;
-        padding: .5rem;
-        font-size: 2rem;
+        font-size: 1rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -407,4 +403,134 @@ a {
         width: 80%;
         aspect-ratio: 1/1;
     }
+
+    
+    /* adjust to left */
+@keyframes bounce {
+    0% {
+        /* left, bottom */
+        left: 10%;
+        top: 25rem;
+    }
+
+    5% {
+        left: 16.5%;
+        top: 19rem;
+        /* bottom */
+    }
+
+    10% {
+        left: 23%;
+        top: 25rem;
+    }
+
+    15% {
+        left: 29.5%;
+        top: 19rem;
+    }
+
+    20% {
+        left: 36%;
+        top: 25rem;
+    }
+
+    25% {
+        left: 42.5%;
+        top: 19rem;
+    }
+
+    30% {
+        left: 49%;
+        top: 25rem;
+    }
+
+    35% {
+        left: 49%;
+        top: 19rem;
+    }
+
+    40% {
+        /* dropping mail */
+        left: 49%;
+        top: 25rem;
+    }
+
+    /* bounce on way back */
+    43% {
+        top: 24rem;
+    }
+
+    46% {
+        top: 25rem;
+    }
+
+    49% {
+        top: 24rem;
+    }
+
+    52% {
+        top: 25rem;
+    }
+
+    55% {
+        top: 24rem;
+    }
+
+    58% {
+        top: 25rem;
+    }
+
+    61% {
+        top: 24rem;
+    }
+
+    64% {
+        top: 25rem;
+    }
+
+    67% {
+        top: 24rem;
+    }
+
+    70% {
+        top: 25rem;
+    }
+
+    73% {
+        top: 24rem;
+    }
+
+    76% {
+        top: 25rem;
+    }
+
+    79% {
+        top: 24rem;
+    }
+
+    82% {
+        top: 25rem;
+    }
+
+    85% {
+        top: 24rem;
+    }
+
+    88% {
+        top: 25rem;
+    }
+
+    91% {
+        top: 24rem;
+    }
+
+    94% {
+        top: 25rem;
+    }
+
+    97% {
+        top: 24rem;
+    }
+}
+
 }
