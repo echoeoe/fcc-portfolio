@@ -3,7 +3,6 @@ html {
     font-family: 'Handlee', sans-serif;
     max-width: 100%;
     overflow-x: hidden;
-
 }
 
 body {
@@ -382,10 +381,13 @@ a {
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     #navbar a {
-        padding: .5rem;
+        padding: .8rem;
 
     }
 
@@ -405,14 +407,20 @@ a {
         height: 100%;
         align-items: center;
         padding-bottom: 12vh;
+        justify-content: center;
     }
 
     /* make tile bigger */
     .project-tile {
         width: 80%;
-        aspect-ratio: 1/1;
+        
+        aspect-ratio: 1 / 1;
     }
 
+    /* projects section wider than others */
+    section{
+        box-sizing: border-box;
+        }
 
     /* adjust to left */
     @keyframes bounce {
@@ -548,6 +556,12 @@ a {
         /* indicator - remove later */
         background-color: yellowgreen;
     }
+
+    /* projects section wider than others */
+    section{
+    box-sizing: border-box;
+    }
+
 
     /* adjust to left */
     @keyframes bounce {
