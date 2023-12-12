@@ -1,11 +1,11 @@
 html {
     font-family: 'Handlee', sans-serif;
-    max-width: 100%;
-    overflow-x: hidden;
 }
 
 body {
     margin: 0;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 #navbar {
@@ -120,8 +120,9 @@ a {
 
 #projects {
     background-color: lightskyblue;
-    height: 140vh;
-    border: 1px solid transparent;
+    height: 100%;
+    padding-left: auto;
+    padding-right: auto;
     display: grid;
     grid-template-areas:
         'header header header'
@@ -368,7 +369,7 @@ a {
     }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1000px) {
     html {
         overflow-x: hidden;
     }
