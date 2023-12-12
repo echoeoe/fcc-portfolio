@@ -1,5 +1,4 @@
 html {
-    box-sizing: border-box;
     font-family: 'Handlee', sans-serif;
     max-width: 100%;
     overflow-x: hidden;
@@ -425,7 +424,7 @@ a {
 
     #profile-link {
         /* add space top of button, bigger */
-        margin-top: 2rem;
+        margin-top: 3rem;
         height: 3rem;
         width: 8rem;
         font-size: 2rem;
@@ -566,9 +565,25 @@ a {
         /* indicator - remove later */
         background-color: yellowgreen;
     }
+    
+    /* increase tile size */
+    .project-tile {
+        width: 90%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+    
+    #profile-link {
+        /* decrease button size */
+        height: 2rem;
+        width: 5rem;
+        font-size: 1rem;
+    }
 
     /* projects section wider than others */
-
+    #projects{
+        width: 100vw;
+    }
 
 
     /* adjust to left */
