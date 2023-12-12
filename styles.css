@@ -369,7 +369,7 @@ a {
     }
 }
 
-@media screen and (width < 1000px) {
+@media only screen and (max-width: 1024px) {
     html {
         overflow-x: hidden;
     }
@@ -377,7 +377,7 @@ a {
     #navbar {
         /* indicator - remove later */
         background-color: pink;
-        /* make Contact fit on the navbar */
+        /* make Contact fit on the navbar, center all */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -387,8 +387,8 @@ a {
     }
 
     #navbar a {
+        /* more space between */
         padding: .8rem;
-
     }
 
     #link-div {
@@ -401,26 +401,28 @@ a {
     }
 
     #projects {
+        height: 100%;
+        padding-bottom: 12vh;
         /* vertical, one at a time, center */
         display: flex;
         flex-direction: column;
-        height: 100%;
         align-items: center;
-        padding-bottom: 12vh;
         justify-content: center;
     }
 
-    /* make tile bigger */
+
     .project-tile {
-        width: 80%;
-        
+        /* make tile bigger */
+        width: 50vw;
+        height: auto;
         aspect-ratio: 1 / 1;
     }
 
-    /* projects section wider than others */
-    section{
-        box-sizing: border-box;
-        }
+    #projects h2 {
+        /* center text */
+        margin-left: 0;
+    }
+
 
     /* adjust to left */
     @keyframes bounce {
@@ -551,16 +553,14 @@ a {
     }
 }
 
-@media screen and (width < 500px) {
+@media only screen and (max-width: 500px) {
     #navbar {
         /* indicator - remove later */
         background-color: yellowgreen;
     }
 
     /* projects section wider than others */
-    section{
-    box-sizing: border-box;
-    }
+
 
 
     /* adjust to left */
