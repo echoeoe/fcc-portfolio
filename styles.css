@@ -438,6 +438,7 @@ a {
 
     #contact{
         height: 100vh;
+        margin-bottom: 0;
     }
 
     /* adjust to left */
