@@ -108,10 +108,7 @@ a {
 .project-tile {
     border: 2px solid transparent;
     background-color: cornsilk;
-    width: 27vw;
-    height: auto;
     aspect-ratio: 1 / 1;
-    margin: 1rem;
     grid-area: main;
 }
 
@@ -124,14 +121,17 @@ a {
 #projects {
     background-color: lightskyblue;
     height: 100%;
-    padding-left: auto;
-    padding-right: auto;
+    padding-left: 5%;
+    padding-right: 5%;
     display: grid;
     grid-template-areas:
         'header header header'
         'main main main'
         'main main main'
         'button button button';
+    grid-template-rows: .3fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
     padding-bottom: 3rem;
 }
 
