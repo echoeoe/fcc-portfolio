@@ -123,6 +123,7 @@ a {
     height: 100%;
     padding-left: 5%;
     padding-right: 5%;
+
     display: grid;
     grid-template-areas:
         'header header header'
@@ -423,12 +424,7 @@ a {
         justify-content: center;
     }
 
-
     .project-tile {
-        /* make tile bigger */
-        width: 70vw;
-        height: auto;
-        aspect-ratio: 1 / 1;
         font-size: 1.5rem;
     }
 
@@ -452,13 +448,6 @@ a {
 }
 
 @media only screen and (max-width: 500px) {
-
-    /* increase tile size */
-    .project-tile {
-        width: 90%;
-        height: auto;
-        aspect-ratio: 1 / 1;
-    }
 
     #profile-link {
         /* decrease button size */
